@@ -45,10 +45,12 @@ seaborn
 
 ##### Source and Target
 ![source_and_target](https://github.com/mikigom/large-scale-OT-mapping-TF/blob/master/viz/XnY.png?raw=true)
+
 Source points are green and target points are red.
 
 ##### Monge Map Estimation
 ![monge_map_estimation](https://github.com/mikigom/large-scale-OT-mapping-TF/blob/master/viz/XnFx.png?raw=true)
+
 Source points are green and transported points are blue.
 
 ##### KDE on transported distribution
