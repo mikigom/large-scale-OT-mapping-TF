@@ -30,6 +30,8 @@ Unlike paper, batch-wise optimization is not done.
 
 L2-based regularization is not implemented. Entropy-based regularization only.
 
+To run experiments, run `run.sh`.
+
 ### Requirements
 ```
 python3
@@ -42,12 +44,15 @@ seaborn
 ## Results
 
 ##### Source and Target
+![source_and_target](https://github.com/mikigom/large-scale-OT-mapping-TF/blob/master/viz/XnY.png?raw=true)
 Source points are green and target points are red.
 
 ##### Monge Map Estimation
+![monge_map_estimation](https://github.com/mikigom/large-scale-OT-mapping-TF/blob/master/viz/XnFx.png?raw=true)
 Source points are green and transported points are blue.
 
 ##### KDE on transported distribution
+![kde_on_transported_distribution](https://github.com/mikigom/large-scale-OT-mapping-TF/blob/master/viz/Fx.png?raw=true)
 
 #### Author
 @mikigom (Junghoon Seo)
