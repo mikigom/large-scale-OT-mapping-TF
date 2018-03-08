@@ -20,6 +20,7 @@ Bibliographic Code:
 2017arXiv171102283S
 ```
 [on arXiv](https://arxiv.org/abs/1711.02283)
+
 [on OpenReview](https://openreview.net/forum?id=B1zlp1bRW)
 
 ### Some notes
