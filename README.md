@@ -34,6 +34,8 @@ it confirms the thesis's core algorithm in a small toy example.
 
 - L2 regularization generally looks better than entropic regularization.
 
+- Epsilon is quiet sensitive and important hyper-parameter. In my toy example, `eps = 0.01` looks reasonable choice.
+
 ### Requirements
 ```
 python3
@@ -59,6 +61,6 @@ Source points are green and transported points are blue.
 ![kde_on_transported_distribution](viz/l2/Fx.png)
 
 #### Author
-@mikigom (Junghoon Seo)
+@mikigom (Junghoon Seo, Satrec Initiative)
 
 sjh@satreci.com

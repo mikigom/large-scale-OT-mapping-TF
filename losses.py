@@ -1,7 +1,7 @@
 import tensorflow as tf
 from costs import cost_l2
 
-__eps__ = .1
+__eps__ = .01
 
 
 def F_entropy(ux, vy, x, y, c=cost_l2, eps=__eps__):
