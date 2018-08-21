@@ -9,6 +9,7 @@ from losses import primer_dual
 flags = tf.app.flags
 flags.DEFINE_integer("n_epoch", 20000, "Epoch to train [20000]")
 flags.DEFINE_integer("n_batch_size", 512, "Batch size to train [512]")
+flags.DEFINE_string("reg_type", 'l2', "Regularization Type")
 flags.DEFINE_float("learning_rate", 0.005, "Learning rate of optimizer [0.005]")
 FLAGS = flags.FLAGS
 
@@ -70,7 +71,7 @@ class Trainer(object):
         self.f_var_list = self.f.var_list
 
     def define_loss(self):
-        self.loss = tf.reduce_mean(primer_dual(self.fx, self.ux, self.vy, self.x, self.y))
+        self.loss = tf.reduce_mean(primer_dual(self.fx, self.ux, self.vy, self.x, self.y, reg_type=FLAGS.reg_type))
 
     def define_optim(self):
         self.step = tf.Variable(0, name='step', trainable=False)

@@ -25,14 +25,14 @@ Bibliographic Code:
 
 ### Some notes
 
-This repository does not contain an implementation of the entire experiment of the paper. Instead,
+- This repository does not contain an implementation of the entire experiment of the paper. Instead,
 it confirms the thesis's core algorithm in a small toy example.
 
-Unlike paper, batch-wise optimization is not done.
+- Unlike the original paper, total batch-wise optimization is not implemented but I believe that it makes little difference.
 
-L2-based regularization is not implemented. Entropy-based regularization only.
+- To run experiments, run `run.sh`.
 
-To run experiments, run `run.sh`.
+- L2 regularization generally looks better than entropic regularization.
 
 ### Requirements
 ```
@@ -43,20 +43,20 @@ seaborn
 ...
 ```
 
-## Results
+## Results (on L2 regularization)
 
 ##### Source and Target
-![source_and_target](https://github.com/mikigom/large-scale-OT-mapping-TF/blob/master/viz/XnY.png?raw=true)
+![source_and_target](viz/l2/XnY.png)
 
 Source points are green and target points are red.
 
 ##### Monge Map Estimation
-![monge_map_estimation](https://github.com/mikigom/large-scale-OT-mapping-TF/blob/master/viz/XnFx.png?raw=true)
+![monge_map_estimation](viz/l2/XnFx.png)
 
 Source points are green and transported points are blue.
 
 ##### KDE on transported distribution
-![kde_on_transported_distribution](https://github.com/mikigom/large-scale-OT-mapping-TF/blob/master/viz/Fx.png?raw=true)
+![kde_on_transported_distribution](viz/l2/Fx.png)
 
 #### Author
 @mikigom (Junghoon Seo)
