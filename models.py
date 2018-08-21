@@ -24,7 +24,7 @@ class NN_DUAL(object):
                                 activation_fn=__leaky_relu__):
                 fc_1 = slim.fully_connected(self.input)
                 fc_2 = slim.fully_connected(fc_1)
-                fc_3 = slim.fully_connected(fc_2, num_outputs=1, activation_fn=tf.nn.relu)
+                fc_3 = slim.fully_connected(fc_2, num_outputs=1, activation_fn=None)
 
         self.output = fc_3
         self.var_list = tf.contrib.framework.get_variables(vs)
